@@ -1,0 +1,33 @@
+.b-navBar {
+  background-color: $majorColor;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 991px) {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  &_noMargin {
+    margin: 0 -15px;
+  }
+
+  &__link {
+    color: $superLightColor;
+    display: inline-block;
+    font-size: 13px;
+    transition-duration: .5s;
+
+    &_margins {
+      margin-right: 20px;
+    }
+    
+    &:hover {
+      text-decoration: none;
+      color: $superDarkColor;
+      box-shadow: 0 10px 20px $darkColor;
+      transform: scale(1.15);
+    }
+  }
+}

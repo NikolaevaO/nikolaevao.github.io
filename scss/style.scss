@@ -1,0 +1,26 @@
+@import "../fonts/stylesheet.css";
+@import "variables";
+@import "blocks/header";
+@import "blocks/logoSlogan";
+@import "blocks/socials";
+@import "blocks/signMenu.scss";
+@import "blocks/navBar";
+@import "blocks/formSearch";
+@import "blocks/carousel";
+@import "blocks/chapterAgue";
+@import "blocks/hr";
+@import "blocks/project";
+@import "blocks/footer";
+
+
+.container {
+  background-color: $superLightColor;
+  height: 100%;
+  margin: 30px auto;
+  border-top: 5px solid $majorColor;
+}
+
+body {
+  font-family: $myFonts;
+  background-color: $superDarkColor;
+}

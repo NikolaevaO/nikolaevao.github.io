@@ -1,0 +1,42 @@
+.b-project {
+  padding: 15px 15px 30px;
+  justify-content: space-evenly;
+
+  &__image{
+    width: 100%;
+
+    &_border {
+      border: 5px solid $superLightColor;
+      outline: 1px solid $lightColor;
+    }
+  }
+
+  &__head {
+    font-size: 14px;
+
+    &_top {
+      margin: 20px 0 14px;
+    }
+  }
+
+  &__text {
+    color: $mediumColor;
+    font-size: 13px;
+    line-height: 20.8px;
+  }
+}
+
+.b-details {
+  display: block;
+  text-align: right;
+  color: $majorColor;
+  margin-bottom: 20px;
+  transition-duration: .5s;
+
+  &:hover {
+    text-decoration: none;
+    color: $majorColor;
+    transform: scale(1.4) translate(-35px);
+    text-shadow: 0 9px 8px $majorColor;
+  }
+}
