@@ -24,3 +24,27 @@ body {
   font-family: $myFonts;
   background-color: $superDarkColor;
 }
+/*некоторые стили не по БЭМ (напр. стили соц-иконок) для удобства выносятся в общий файл со стилями*/
+.fa-users {
+  font-size: 64px;
+  color: #c45f4b;
+  margin-bottom: 20px;
+}
+
+.fa-globe-americas {
+  font-size: 64px;
+  color: #cf9d41;
+  margin-bottom: 20px;
+}
+
+.fa-cogs {
+  font-size: 64px;
+  color: #3d5f12;
+  margin-bottom: 20px;
+}
+
+.fa-leaf {
+  font-size: 64px;
+  color: #7da3b7;
+  margin-bottom: 20px;
+}

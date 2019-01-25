@@ -1,9 +1,12 @@
 .b-signMenu {
-  position: absolute;
-  right: 15px;
-  top: 85px;
   font-size: 12px;
 
+  &_position {
+    position: absolute;
+    right: 15px;
+    top: 85px;
+  }
+  
   &__item {
     color: #81b300;
     transition-duration: .5s;

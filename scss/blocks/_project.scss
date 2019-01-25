@@ -30,8 +30,11 @@
   display: block;
   text-align: right;
   color: $majorColor;
-  margin-bottom: 20px;
   transition-duration: .5s;
+
+  &_margin {
+    margin-bottom: 20px;
+  }
 
   &:hover {
     text-decoration: none;

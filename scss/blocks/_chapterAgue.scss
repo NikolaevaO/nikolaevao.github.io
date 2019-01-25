@@ -14,7 +14,10 @@
     color: $majorColor;
     font-size: 18px;
     line-height: 21.6px;
-    margin-bottom: 20px;
+
+    &_marginBottom {
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
@@ -22,30 +25,6 @@
     font-size: 13px;
     line-height: 20.8px;
   }
-}
-
-.fa-users {
-  font-size: 64px;
-  color: #c45f4b;
-  margin-bottom: 20px;
-}
-
-.fa-globe-americas {
-  font-size: 64px;
-  color: #cf9d41;
-  margin-bottom: 20px;
-}
-
-.fa-cogs {
-  font-size: 64px;
-  color: #3d5f12;
-  margin-bottom: 20px;
-}
-
-.fa-leaf {
-  font-size: 64px;
-  color: #7da3b7;
-  margin-bottom: 20px;
 }
 
 .heartbeat:hover {
