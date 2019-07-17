@@ -1,0 +1,58 @@
+.b-augue {
+  padding: 0 18px;
+  justify-content: space-between;
+  
+  &_marginTop{
+    margin-top: 50px;
+  }
+}
+
+.b-chapterAugue {
+  text-align: center;
+
+  &__head {
+    color: $majorColor;
+    font-size: 18px;
+    line-height: 21.6px;
+
+    &_marginBottom {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    color: $mediumColor;
+    font-size: 13px;
+    line-height: 20.8px;
+  }
+}
+
+.heartbeat:hover {
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+ @keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+

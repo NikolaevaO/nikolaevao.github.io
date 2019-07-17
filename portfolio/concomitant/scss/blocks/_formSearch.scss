@@ -1,0 +1,22 @@
+.b-search {
+  
+  &__field_left {
+    float: left;
+    color: $mediumColor;
+    width: 215px;
+  }
+
+  &__button {
+    color: $majorColor;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: .5s;
+
+    &:hover {
+      background: $hoverColor;
+      color: $superLightColor;
+      box-shadow: 0 10px 20px $darkColor;
+      transform: scale(1.15);
+    }
+  }
+}

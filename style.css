@@ -1,0 +1,81 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(236, 223, 206);
+}
+
+.container  {
+  max-width: 100%;
+  /* padding: 0; */
+}
+
+header,
+footer {
+  background: black;
+  display: grid;
+}
+
+#menu {
+  margin-top: 25px;
+  margin-left: 350px;
+}
+
+#menu li {
+  float: left;
+  list-style-type: none;
+}
+
+#menu li a {
+  color: rgb(236, 223, 206);
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  height: 30px;
+  padding: 0px 20px;
+}
+
+.head {
+  position: relative;
+  background: url(img/keyboard.jpg) no-repeat;
+  padding-top: 25%;
+  opacity: .8;
+}
+
+.myName {
+  position: absolute;
+  bottom: 57%;
+  left: 47%;
+  text-align: right;
+}
+
+.myPhoto {
+  position: absolute;
+  bottom: 38%;
+  left: 2%;
+}
+
+.myPhoto > img {
+  border-radius: 5%;
+}
+
+.resume,
+.portfolio,
+footer {
+  padding: 4% 10%;
+}
+
+.resume {
+  background: #2c3e50;
+}
+
+.portfolio {
+  background: rgb(215, 218, 219);
+  color: rgb(58, 54, 54);
+}
+
+.description {
+  text-transform: initial;
+}

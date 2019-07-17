@@ -1,0 +1,90 @@
+.b-footer {
+  background-color: $darkColor;
+  color: $lightColor;
+  padding: 41px 30px;
+  justify-content: space-between;
+
+  &__sectionHead {
+    color: $mediumColor-2;
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    width: 201px;
+    font-size: 12px;
+    line-height: 20.8px;
+
+    &_ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+
+  &__links {
+    color: $lightColor;
+    display: block;
+    border-bottom: 1px solid $mediumColor-2;
+    padding: 5px 0;
+    transition-duration: .5s;
+
+    &:hover {
+      text-decoration: none;
+      color: $hoverColor;
+      box-shadow: 0 5px 25px $majorColor;
+      transform: scale(1.1);
+    }
+  }
+
+  &__blogTitle {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.b-subscriptionForm {
+
+  &__input {
+    width: 100%;
+    height: 31px;
+    background-color: $superDarkColor;
+    padding-left: 7px;
+
+    &_field {
+      border: 1px solid $superDarkColor;
+      border-radius: 7px;
+      margin-bottom: 8px;
+    }
+
+    &_button {
+      border: 1px solid $superDarkColor;
+      border-radius: 7px;
+      width: 80px;
+      color: $majorColor;
+      cursor: pointer;
+      transition-duration: .5s;
+
+      &:hover {
+        color: $hoverColor;
+        box-shadow: 0 10px 20px $majorColor;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.b-copy {
+  background-color: $darkColor-2;
+  padding: 25px 30px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &_margin {
+    margin: 0 -15px -1rem -15px;
+  }
+
+  &__text {
+    color: $mediumColor-2;
+    font-size: 12px;
+  }
+}
