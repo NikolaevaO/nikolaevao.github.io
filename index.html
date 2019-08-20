@@ -8,71 +8,102 @@
   <link rel="stylesheet" href="style.css">
   <title>Оксана. Junior Front-End разработчик</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#menu" data-offset="100">
   <div class="container">
-    <header class="row">
-      <div id="menu" class="row">
-        <ul>
-          <!-- <li><a href="#">Обо мне</a></li> -->
-          <li><a href="#">Резюме</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+    <header class="row justify-content-center">
+      <nav id="menu" class="navbar">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link smothscroll" href="#resume">Резюме</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smothscroll" href="#portfolio">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smothscroll" href="#contacts">Контакты</a>
+          </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
-      <div class="row head">
-        <div class="myName">
+      <section id="about" class="row head">
+        <div class="myPhoto col-md-3">
+          <img src="http://placehold.it/150x150 " alt="Мое фото">
+        </div>
+        <div class="myName col-md-9">
           <h1>Junior Front-End developer</h1>
           <h3>Николаева Оксана</h3>
         </div>
-        <div class="myPhoto">
-          <img src="http://placehold.it/150x150 " alt="Мое фото">
-        </div>
-      </div>
-      <div class="row resume">
-        <h5 class="col-lg-3">Резюме</h5>
-        <div class="col-lg-9 description">
-          <p>tут будет текст резюме xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            fgfgfgfgfgfgfffffffffhhhhhhhhhhsssks
-            cbbbbbbbbbbbbbbbbbbbbccccccccccccmmmmmmmmmmmmmmmggggggggggggg
-            ghghggggggggggggggggghhhhhhhhhhhhhhhhhhsssssssssssssslllllll
-            dddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </section>
+      <section id="resume" class="row">
+        <h5 class="sectionHeader col-md-3">Резюме</h5>
+        <div class="col-md-9 resumeDescription">
+          <p>tут будет текст резюме xxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxx
+            fgfgfgfgfgfgfffff ffffhhhhhhhhhhsssks
+            cbbbbbbbb bbbbbbbbbbbb ccccccccccc cmmmmmm mmmmmmmmmgggg ggggggggg
+            ghghggggggg gggggggggghh hhhhhhhh hhhhh hhhsss sssssss sssslllllll
+            dddddddd ddddddd dddddddddddddd dddddddd dddddd ddddddd dddd
+            aaaaaaaa aaaa aaaa aaaaa aaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaa
           </p>
         </div>
-      </div>
-      <div class="row portfolio">
-        <h5 class="col-lg-3">Мои работы</h5>
-        <div class="col-lg-9 description">
-          <div class="concomitant">
+      </section>
+      <section id="portfolio" class="row">
+        <h5 class="sectionHeader col-md-3">Мои работы</h5>
+        <div class="col-md-9 portfolioDescription">
+          <figure class="figure">
             <a href="portfolio/concomitant/index.html">
-              <img src="" alt="Проект №1">
+              <img src="img/conc.png" class="figure-img img-fluid rounded" alt="concomitant">
+              <figcaption class="text-center">Адаптивная страница, построенная на bootstrap-4,
+                по методологии БЭМ, с применением препроцессора sass
+              </figcaption>
             </a>
-            <p>описание №1</p>
-          </div>
-          <div class="concomitant">
-            <img src="" alt="Проект №2">
-            <p>описание №2</p>
-          </div>
-          <div class="concomitant">
-            <img src="" alt="Проект №3">
-            <p>описание №3</p>
-          </div>
-          <div class="concomitant">
-            <img src="" alt="Проект №4">
-            <p>описание №4</p>
-          </div>
-      
+          </figure>
+          <hr>
 
+          <figure class="figure">
+            <a href="portfolio/simple_psd_template/index.html">
+              <img src="img/simple.png" class="figure-img img-fluid rounded" alt="simple_psd_template">
+              <figcaption class="text-center">Адаптивная, полностью анимированная страница,
+                построенная на bootstrap-4,
+                с применением css анимации (кнопок, иконок, видео)
+              </figcaption>
+            </a>
+          </figure>
+          <hr>
+
+          <figure class="figure">
+            <a href="portfolio/hotel_booking/index.html">
+              <img src="img/hotel.png" class="figure-img img-fluid rounded" alt="hotel_booking">
+              <figcaption class="text-center">Адаптивная страница с использованием jquery, css grid, а так же
+                с применением css анимации (кнопок, иконок, ссылок, текстов, изображений)
+              </figcaption>
+            </a>
+          </figure>
+          <hr>
+
+          <figure class="figure">
+            <a href="">
+              <img src="" class="figure-img img-fluid rounded" alt="Проект №4">
+              <figcaption class="text-center">описание №4</figcaption>
+            </a>
+          </figure>
         </div>
-      </div>
+      </section>
     </main>
-    <footer class="row">
-      <h5 class="col-lg-3">Контакты</h5>
-      <div class="col-lg-9 description">
+    <footer id="contacts" class="row">
+      <h5 class="sectionHeader col-md-3">Контакты</h5>
+      <div class="col-md-9 description">
         <p>tут будет номер тел. ел. почта</p>
       </div>
+
+      <!-- <button type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+
+      <!-- Добавить кнопку "наверх" -->
+      <!-- <li class="nav-item">
+            <a class="nav-link smothscroll" href="#about">Обо мне</a>
+          </li> -->
     </footer>
   </div>
 
