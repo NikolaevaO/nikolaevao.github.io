@@ -1,0 +1,406 @@
+@font-face {
+  font-family: 'Arial MT';
+  src: url(../fonts/ArialMt.ttf) format('truetype');
+  src: url(../fonts/ArialMT.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Socialico';
+  src: url(../Socialico/Socialico.ttf) format('truetype');
+  src: url(../Socialico/Socialico.woff) format('woff');
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Arial MT', sans-serif;
+}
+
+@media (min-width: 1280px) {
+  div.container {
+    max-width: 1280px;
+  }
+}
+
+header {
+  background-color: #445162;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /*Видео заполняет всю доступн. обл., даже если часть его скрыта*/
+  object-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2px);/*размытие по Гаусу, видео, картинок или текста (может указываться в любых ед.)*/
+}
+
+header,
+section {
+  padding: 25px;
+}
+
+header > div.col-lg-6,
+section > div.col-md-5,
+section > div.col-md-7,
+section > div.col-lg-5,
+section > div.col-lg-7 {
+  padding: 0;
+}
+
+h1 {
+  margin-top: -4px;
+  margin-bottom: 42px;
+  line-height: 1;
+}
+
+h2 {
+  color: #445161;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #445161;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+.about h2 {
+  text-align: left;
+  margin-top: -6px;
+}
+
+video {
+  width: 88%;
+}
+
+@media (max-width: 992px) {
+  video {
+    width: 100%;
+  }
+}
+
+.product-name {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+
+.align-right {
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .align-right img {
+    width: 100%;
+  }
+}
+
+.plus li {
+  list-style-type: none;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.plus li p {
+  margin-left: 41px;
+}
+
+.plus li::before {
+  content: '+';
+  display: block;
+  background-color: #445161;
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+  line-height: 0.97;
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-top: 5px;
+}
+
+.plus li:nth-child(n+2) {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .plus li {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .plus li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dignity {
+  background-color: #f5f5f5;
+  margin-top: 50px;
+}
+
+.screenshots > .row {
+  justify-content: space-evenly;
+}
+
+.screenshots img {
+  padding-top: 5px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .screenshots img {
+    margin-bottom: 15px;
+  }
+}
+
+.reviews {
+  background-color:#f5f5f5;
+}
+.reviews img {
+  border-radius: 50%;
+  float: left;
+}
+
+.reviews blockquote {
+  position: relative;
+  background: #ebebeb;
+  margin-left: 110px;
+  padding: 16px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.reviews blockquote:before {
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  background: #ebebeb;
+  transform: rotate(45deg);/*поворачиваем созданный контент на 45 градусов*/
+}
+
+.author {
+  color: #989898;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.buyNow .row {
+  justify-content: space-between;
+  align-items: flex-end; /*Выравнивание по поперечной оси*/
+  margin-bottom: 30px;
+}
+
+.buyNowCard {
+  background-color: #445162;
+  max-width: calc(33.33% - 30px);
+  padding: 0;
+  border: 2px solid #445162;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .buyNowCard {
+    max-width: 100%;
+  }
+  .buyNowCard:not(last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.price {
+  color: #445162;
+  background-color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 71px;
+}
+
+.buyNowCard h3 {
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.buyNowCard ol {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 20px;
+  list-style-position: inside;/*расположение маркеров списка внути текста*/
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .buyNowCard ol {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .buyNowCard ol {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.buyNow input,
+.buyNow button {
+  width: calc(100% - 40px);
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #445161;
+  transition: all 1.5s ease;
+}
+
+footer {
+  background-color: #445162;
+  color: #fff;
+  padding-top: 50px;
+}
+
+footer h2 {
+  color: inherit;
+}
+
+footer .row {
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  footer .row {
+  width: 100%;
+  padding-left: 30px;
+  }
+}
+
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 0 10px;
+  line-height: 40px;
+  border: #fff 1px solid;
+  border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+form input[type="submit"] {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-weight: bold;
+  color: #445162;
+  transition: all 0.8s ease;
+}
+/*аним. кнопок*/
+form input[type="submit"]:hover,
+form button[type="submit"]:hover {
+  border-radius:100%;
+  cursor: pointer;
+}
+
+.social {
+  margin-top: -12px;
+  max-width: 270px;
+  padding-left: 30px;
+  padding-right: 0;
+  line-height: 2.5em;
+}
+
+@media (max-width: 768px) {
+  .social {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.form {
+  max-width: 500px;
+}
+
+.icon {
+  font-family: 'Socialico';
+  font-size: 58px;
+  display: inline-block;
+  margin-top: 15px;
+  background: #445162;
+  color: #fff;
+  border-radius: 50%;
+  letter-spacing: -2px;
+  transition: all 0.5s ease;
+}
+
+.icon:hover {
+  text-decoration: none;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+  .icon {
+  font-size: 45px;
+  }
+}
+
+.copy {
+  background-color: #f5f5f5;
+  color: #445162;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.myHidden {
+  opacity: 0;
+}
+
+.myVisible {
+  opacity: 1;
+}

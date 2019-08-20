@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="fonts/fontawesome-free-5.6.1-web/css/all.min.css">
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel Booking Website Template</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="image/logo.png" alt="logo">
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+      <div class="mobile">
+        <div id="menuButton" onclick="showHideMenu()"><!--по клику запускаем ф-цию
+        показа меню (из файла js)-->
+          <i class="fas fa-bars"></i>
+        </div>
+        <div id="mobileMenu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="perfection">
+        <div class="perfection-1">
+          <h2>Perfection.</h2>
+        </div>
+        <div>
+          <h3>And you are invited.</h3>
+        </div>
+        <div class="perfection-2"></div>
+        <div class="perfection-3"></div>  
+      </section>
+      <div class="form">
+        <form action="#">
+          <div><input type="text" class="datepicker" placeholder="Arrival"></div>
+          <div><input type="text" class="datepicker" placeholder="Departure"></div>
+          <div>
+            <input list="room" placeholder="Choose a Room">
+            <datalist id="room">
+              <option label="One" value="One"></option>
+              <option label="Two" value="Two"></option>
+              <option label="Three" value="Three"></option>
+            </datalist>
+          </div>
+          <div>
+            <input list="state" placeholder="State">
+              <datalist id="state">
+                <option label="CA" value="CA"></option>
+                <option label="NY" value="NY"></option>
+                <option label="TX" value="TX"></option>
+              </datalist>
+          </div>
+          <div><input type="submit" value="BOOK NOW"></div>
+        </form>
+      </div>
+      <section class="winningHotels">
+        <h3>Award Winning Hotels</h3>
+        <div class="hotel">
+          <div>
+            <figure>
+              <a href="#"><img src="image/win-1.jpg" alt="win-1"></a>
+              <figcaption>Middle of downtown</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+          <div>
+            <figure>
+              <a href="#"><img src="image/win-2.jpg" alt="win-2"></a>
+              <figcaption>Great Environment</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+          <div>
+            <figure>
+              <a href="#"><img src="image/win-3.jpg" alt="win-3"></a>
+              <figcaption>Free Breakfast</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+          <div>
+            <figure>
+              <a href="#"><img src="image/win-4.jpg" alt="win-4"></a>
+              <figcaption>We Clean Everyday</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+          <div>
+            <figure>
+              <a href="#"><img src="image/win-5.jpg" alt="win-5"></a>
+              <figcaption>Enjoy nightlife</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+          <div>
+            <figure>
+              <a href="#"><img src="image/win-6.jpg" alt="win-6"></a>
+              <figcaption>Meet New People</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+        </div>
+          <div class="more">
+            <a href="#">more</a>
+          </div>
+      </section>
+      <section class="winterActivities">
+        <h2>Winter activities</h2>
+        <div class="winter">
+          <div>
+            <a href="#">
+              <img src="image/winter-1.jpg" alt="Skiing">
+              <div class="text">
+                <h3>Skiing</h3>
+                <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+                  Furniture and decoration of concrete? You to us.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="image/winter-2.jpg" alt="Boarding">
+              <div class="text">
+                <h3>boarding</h3>
+                <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+                  Furniture and decoration of concrete? You to us.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="image/winter-3.jpg" alt="Cycling">
+              <div class="text">
+                <h3>Cycling</h3>
+                <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+                  Furniture and decoration of concrete? You to us.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="image/winter-4.jpg" alt="Hiking">
+              <div class="text">
+                <h3>Hiking</h3>
+                <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+                  Furniture and decoration of concrete? You to us.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="image/winter-5.jpg" alt="Trekking">
+              <div class="text">
+                <h3>Trekking</h3>
+                <p>We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+                  Furniture and decoration of concrete? You to us.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="deluxeRooms">
+        <h2>DELUXE ROOMS WITH<br>
+          A BEAUTIFUL VIEW</h2>
+          <div class="deluxe">
+            <div>
+              <figure>
+                <a href="#"><img src="image/deluxe-1.jpg" alt="room-1"></a>
+                <figcaption>Magna pars studiorum</figcaption>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
+                Nul id dolor id nibh ultricies vehicula ut id elit.
+                Nullam quis risus eget urna mollis ornare leo.
+              </p>
+            </div>
+            <div class="room-3">
+              <figure>
+                <a href="#"><img src="image/deluxe-3.jpg" alt="room-3"></a>
+                <figcaption>Magna pars studiorum</figcaption>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
+                Nul id dolor id nibh ultricies vehicula ut id elit.
+                Nullam quis risus eget urna mollis ornare leo.
+              </p>
+            </div>
+            <div>
+              <figure>
+                <a href="#"><img src="image/deluxe-2.jpg" alt="room-2"></a>
+                <figcaption>Magna pars studiorum</figcaption>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
+                Nul id dolor id nibh ultricies vehicula ut id elit.
+                Nullam quis risus eget urna mollis ornare leo.
+              </p>
+            </div>
+            <div>
+              <figure>
+                <a href="#"><img src="image/deluxe-4.jpg" alt="room-4"></a>
+                <figcaption>Magna pars studiorum</figcaption>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
+                Nul id dolor id nibh ultricies vehicula ut id elit.
+                Nullam quis risus eget urna mollis ornare leo.
+              </p>
+            </div>
+            <div>
+              <figure>
+                <a href="#"><img src="image/deluxe-5.jpg" alt="room-5"></a>
+                <figcaption>Magna pars studiorum</figcaption>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
+                Nul id dolor id nibh ultricies vehicula ut id elit.
+                Nullam quis risus eget urna mollis ornare leo.
+              </p>
+            </div>
+
+          </div>
+          <div class="more">
+            <a href="#">more</a>
+          </div>
+      </section>
+      <section class="weather">
+        <div>
+          <h1>Winter<br>Weather</h1>
+          <p>We fill the space content.
+            High-quality, beautiful, solid and pleasant to the touch.
+            Furniture and decoration of concrete? You to us.
+          </p>
+          <div class="more blueButton">
+              <a href="#">more</a>
+            </div>
+        </div>
+      </section>
+      <section class="news">
+        <h2>News From Us</h2>
+        <div class="ourNews">
+          <div>
+            <figure>
+              <a href="#"><img src="image/news-1.jpg" alt="news-1"></a>
+              <figcaption>Middle of downtown</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+          <div>
+            <figure>
+              <a href="#"><img src="image/news-2.jpg" alt="news-2"></a>
+              <figcaption>Middle of downtown</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+          <div>
+            <figure>
+              <a href="#"><img src="image/news-3.jpg" alt="news-3"></a>
+              <figcaption>Middle of downtown</figcaption>
+            </figure>
+            <p>
+              We fill the space content. High-quality, beautiful, solid and pleasant to the touch.
+              Furniture and decoration of concrete? You to us.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="contacts">
+          <p class="maps">
+            <img src="image/maps.png" alt="maps">
+            123, Main Street, NY 456789
+          </p>
+          <p class="phone">
+            <img src="image/phone.png" alt="phone">
+            +12 345 67890
+          </p>
+          <p class="mail">
+            <img src="image/mail.png" alt="mail">
+            free@psdfreebies.com
+          </p>
+        </div>
+        <div>
+          <ol class="one">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">rooms</a></li>
+          </ol>
+        </div>
+        <div>
+          <ol class="two">
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">partnership</a></li>
+          </ol>
+        </div>
+        <div>
+          <ol class="three">
+            <li><a href="#">Contact</a></li>
+          </ol>
+        </div>
+        <div class="networks">
+          <p>We are in social networks</p>
+          <p>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <p class="copy"> Copyright 2017. PSDFreebies.com  All Right Reserved </p>
+    </footer>
+  </div>
+  <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
