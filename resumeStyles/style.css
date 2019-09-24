@@ -109,89 +109,84 @@ figcaption {
 
 /* laptop */
 .container222{
-	height: 193px;
-  position: relative;
-  margin-top: 50px;
-}
-.screen{
-  width: 274px;
   height: 193px;
-	position: absolute;
-	left: 9px;
-	border-radius: 20px;
-	background-color: #8C43FF;
-	border: 5px solid white;
 }
-.screen:after{
-	content: "";
-	width: 250px;
-  height: 169px;
-	position: absolute;
-	top: 7px;
-  left: 7px;
-	border-radius: 10px;
-	background-color: #ffdd95;
-	border: 5px solid #51150b;
+
+.screen {
+  width: 170px;
+  height: 110px;
+  border-radius: 20px;
+  background-color: #8C43FF;
+  border: 5px solid white;
+  padding: 5px;
+  margin: 0 auto;
 }
-.base{
-  width: 340px;
-  height: 49px;
-  position: absolute;
-  z-index: 2;
-  top: 195px;
-  right: -43px;
+
+.base {
+  width: 203px;
+  height: 30px;
   border-radius: 10px 10px 50px 50px;
   background-color: #a3d3c3;
   border: 5px solid #51150b;
+  transform-style: preserve-3d;
+  margin: 2px auto;
 }
-.base:after{
+
+.base:after {
   content: "";
-  width: 168px;
-  height: 22px;
+  width: 70px;
+  height: 10px;
   position: absolute;
   z-index: 2;
-  top: 0px;
-  left: calc(50% - 84px);
+  left: calc(50% - 38px);
   border-radius: 0 0 15px 15px;
   background-color: #FFF;
   border: 5px solid #51150b;
   border-top: 0px;
 }
-.face{
-	width: 145px;
-  height: 40px;
-  position: absolute;
-  z-index: 3;
-  top: 50px;
-  left: 58px;
+
+.face {
+  display: grid;
+  grid-template-areas:
+      "leftEye mouth rightEye"
+      "leftCheek mouth rightCheek";
+  background-color: #ffdd95;
+  padding: 20px 28px;
+  border-radius: 12px;
 }
-.eyes{
-	width: 29px;
-	height: 31px;
-	position: absolute;
-	top: 0;
-	z-index: 4;
-	background-color: #49161b;
-	border-radius: 50%;
+
+.eyes {
+  width: 16px;
+  height: 17px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  background-color: #49161b;
+  border-radius: 50%;
 }
-.eyes:after{
+
+.eyes:after {
 	content: "";
-	width: 11px;
-	height: 11px;
+  width: 6px;
+  height: 6px;
 	position: absolute;
-	top: 5px;
-	right: 7px; 
+	top: 4px;
+	right: 4px;
 	z-index: 4;
 	background-color: #FFF;
 	border-radius: 50%;
 }
-.eyes-left{
-	left: 0;
+
+.eyes-left {
+  left: 0;
+  grid-area: leftEye;
 }
-.eyes-right{
-	right: 0;
+
+.eyes-right {
+  right: 0;
+  grid-area: rightEye;
 }
-@keyframes animationMouth{
+
+@keyframes animationMouth {
 	0%{
 		border-radius: 0%;
 	}
@@ -205,21 +200,20 @@ figcaption {
 		border-radius: 0%;
 	}
 }
-.mouth{
-    width: 88px;
-    height: 182px;
-    position: absolute;
-    z-index: 4;
-    border-radius: 50%;
-    border-top: 12px solid transparent;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid #51150b;
-    bottom: -23px;
-    left: 30px;
-    animation: animationMouth 5s linear infinite;
+
+.mouth {
+  width: 45px;
+  height: 50px;
+  border-radius: 50%;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #51150b;
+  animation: animationMouth 5s linear infinite;
+  grid-area: mouth;
 }
-@keyframes animationCheek{
+
+@keyframes animationCheek {
 	0%{
 		opacity: 0;
 	}
@@ -236,18 +230,21 @@ figcaption {
 		opacity: 0;
 	}
 }
-.cheek{
-	width: 43px;
-  height: 23px;
-  position: absolute;
-  top: 43px;
-	background-color: #f7adba;
-	border-radius: 50%;
-	animation: animationCheek 5s linear infinite;
+
+.cheek {
+  width: 25px;
+  height: 13px;
+  background-color: #f7adba;
+  border-radius: 50%;
+  animation: animationCheek 5s linear infinite;
 }
-.cheek-left{
-	left: 0;
+
+.cheek-left {
+  left: 0;
+  grid-area: leftCheek;
 }
-.cheek-right{
-	right: 0;
+
+.cheek-right {
+  right: 0;
+  grid-area: rightCheek;
 }
