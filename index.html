@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resumeStyles/style.css">
   <title>Оксана. Junior Front-End разработчик</title>
 </head>
 <body data-spy="scroll" data-target="#menu" data-offset="100">
@@ -13,6 +13,9 @@
     <header class="row justify-content-center">
       <nav id="menu" class="navbar">
         <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a id="goTop" class="nav-link smothscroll" href="#about">Наверх</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link smothscroll" href="#resume">Резюме</a>
           </li>
@@ -48,13 +51,29 @@
         </div>
       </section>
       <section id="portfolio" class="row">
-        <h5 class="sectionHeader col-md-3">Мои работы</h5>
+        <div class="col-md-3">
+          <h5 class="sectionHeader">Мои работы</h5>
+          <!-- laptop -->
+          <div class="container222">
+            <div class="screen">
+              <div class="face">
+                <div class="eyes eyes-left"></div>
+                <div class="eyes eyes-right"></div>
+                <div class="mouth"></div>
+                <div class="cheek cheek-left"></div>
+                <div class="cheek cheek-right"></div>
+              </div>
+            </div>
+            <div class="base"></div>
+          </div>
+        </div>
+        <!-- portfolio -->
         <div class="col-md-9 portfolioDescription">
           <figure class="figure">
             <a href="portfolio/concomitant/index.html">
               <img src="img/conc.png" class="figure-img img-fluid rounded" alt="concomitant">
-              <figcaption class="text-center">Адаптивная страница, построенная на bootstrap-4,
-                по методологии БЭМ, с применением препроцессора sass
+              <figcaption class="text-center">Адаптивная страница, построенная на Bootstrap-4,
+                по методологии БЭМ, с применением препроцессора SASS, CSS анимации
               </figcaption>
             </a>
           </figure>
@@ -64,8 +83,8 @@
             <a href="portfolio/simple_psd_template/index.html">
               <img src="img/simple.png" class="figure-img img-fluid rounded" alt="simple_psd_template">
               <figcaption class="text-center">Адаптивная, полностью анимированная страница,
-                построенная на bootstrap-4,
-                с применением css анимации (кнопок, иконок, видео)
+                построенная на Bootstrap-4,
+                с применением CSS анимации (кнопок, иконок, видео)
               </figcaption>
             </a>
           </figure>
@@ -74,8 +93,8 @@
           <figure class="figure">
             <a href="portfolio/hotel_booking/index.html">
               <img src="img/hotel.png" class="figure-img img-fluid rounded" alt="hotel_booking">
-              <figcaption class="text-center">Адаптивная страница с использованием jquery, css grid, а так же
-                с применением css анимации (кнопок, иконок, ссылок, текстов, изображений)
+              <figcaption class="text-center">Адаптивная страница с использованием jQuery, CSS Grid, а так же
+                с применением CSS анимации (кнопок, иконок, ссылок, текстов, изображений)
               </figcaption>
             </a>
           </figure>
@@ -95,19 +114,11 @@
       <div class="col-md-9 description">
         <p>tут будет номер тел. ел. почта</p>
       </div>
-
-      <!-- <button type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button> -->
-
-      <!-- Добавить кнопку "наверх" -->
-      <!-- <li class="nav-item">
-            <a class="nav-link smothscroll" href="#about">Обо мне</a>
-          </li> -->
     </footer>
   </div>
 
   <script src="lib/jquery-3.3.1.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="script.js" ></script>
 </body>
 </html>

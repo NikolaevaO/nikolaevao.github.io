@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(236, 223, 206);
+}
+
+main {
+  padding-top: 50px;
+}
+
+.container  {
+  max-width: 100%;
+}
+
+header,
+footer {
+  background: black;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 55px;
+}
+
+#goTop {
+  visibility: hidden;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #332f2f;
+}
+
+#menu li a {
+  color: rgb(236, 223, 206);
+}
+
+#about {
+  background: url(../img/keyboard.jpg) no-repeat;
+  padding-top: 25%;
+  opacity: .8;
+}
+
+.myPhoto > img {
+  border-radius: 5%;
+  margin-top: 10px;
+}
+
+.myPhoto, .sectionHeader {
+  margin-bottom: 20px;
+}
+
+#resume,
+#portfolio,
+#about,
+footer {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+#resume {
+  background: #2c3e50;
+}
+
+#portfolio {
+  background: rgb(215, 218, 219);
+  color: rgb(58, 54, 54);
+}
+
+.portfolioDescription {
+  text-transform: initial;
+}
+
+hr {
+margin: 1.5em 0;
+border-top: 1px solid #8d9dac;
+}
+
+figure {
+  width: 100%;
+  max-width: 800px;
+}
+
+figure:not(:first-child) {
+  margin-top: 50px;
+}
+
+figure a:hover {
+  text-decoration: none;
+}
+
+figcaption {
+  color: #2c3e50;
+}
+
+/* laptop */
+.container222{
+	height: 193px;
+  position: relative;
+  margin-top: 50px;
+}
+.screen{
+  width: 274px;
+  height: 193px;
+	position: absolute;
+	left: 9px;
+	border-radius: 20px;
+	background-color: #8C43FF;
+	border: 5px solid white;
+}
+.screen:after{
+	content: "";
+	width: 250px;
+  height: 169px;
+	position: absolute;
+	top: 7px;
+  left: 7px;
+	border-radius: 10px;
+	background-color: #ffdd95;
+	border: 5px solid #51150b;
+}
+.base{
+  width: 340px;
+  height: 49px;
+  position: absolute;
+  z-index: 2;
+  top: 195px;
+  right: -43px;
+  border-radius: 10px 10px 50px 50px;
+  background-color: #a3d3c3;
+  border: 5px solid #51150b;
+}
+.base:after{
+  content: "";
+  width: 168px;
+  height: 22px;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: calc(50% - 84px);
+  border-radius: 0 0 15px 15px;
+  background-color: #FFF;
+  border: 5px solid #51150b;
+  border-top: 0px;
+}
+.face{
+	width: 145px;
+  height: 40px;
+  position: absolute;
+  z-index: 3;
+  top: 50px;
+  left: 58px;
+}
+.eyes{
+	width: 29px;
+	height: 31px;
+	position: absolute;
+	top: 0;
+	z-index: 4;
+	background-color: #49161b;
+	border-radius: 50%;
+}
+.eyes:after{
+	content: "";
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	top: 5px;
+	right: 7px; 
+	z-index: 4;
+	background-color: #FFF;
+	border-radius: 50%;
+}
+.eyes-left{
+	left: 0;
+}
+.eyes-right{
+	right: 0;
+}
+@keyframes animationMouth{
+	0%{
+		border-radius: 0%;
+	}
+	20%{
+		border-radius: 50%;
+	}
+	80%{
+		border-radius: 50%;		
+	}
+	100%{
+		border-radius: 0%;
+	}
+}
+.mouth{
+    width: 88px;
+    height: 182px;
+    position: absolute;
+    z-index: 4;
+    border-radius: 50%;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #51150b;
+    bottom: -23px;
+    left: 30px;
+    animation: animationMouth 5s linear infinite;
+}
+@keyframes animationCheek{
+	0%{
+		opacity: 0;
+	}
+	30%{
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.cheek{
+	width: 43px;
+  height: 23px;
+  position: absolute;
+  top: 43px;
+	background-color: #f7adba;
+	border-radius: 50%;
+	animation: animationCheek 5s linear infinite;
+}
+.cheek-left{
+	left: 0;
+}
+.cheek-right{
+	right: 0;
+}
