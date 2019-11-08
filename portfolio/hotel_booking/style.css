@@ -17,7 +17,6 @@
 }
 
 body {
-  overflow-x: hidden;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -34,6 +33,7 @@ h1, h2, h3 {
 
 .container {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1500px) {
