@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url(portfolio/hotel_booking/fonts/opensans.ttf) format('truetype');
-  src: url(portfolio/hotel_booking/fonts/opensans.woff) format('woff');
+  src: url(../portfolio/hotel_booking/fonts/opensans.ttf) format('truetype');
+  src: url(../portfolio/hotel_booking/fonts/opensans.woff) format('woff');
 }
 
 .back {
