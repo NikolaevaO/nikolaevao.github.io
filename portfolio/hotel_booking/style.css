@@ -299,7 +299,7 @@ header:after { /*задаем высоту хидеру*/
 }
 
 .hotel,
-.ourNews{
+.ourNews {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1141px;
@@ -375,11 +375,6 @@ figure img {
 .hotel figure a img,
 .ourNews figure a img {
   transition: .7s;
-}
-
-.hotel figure a img:hover,
-.ourNews figure a img:hover {
-  opacity: 0.2;
 }
 
 .more {
@@ -640,18 +635,24 @@ figure img {
   }
 }
 
-.deluxe div {
+.deluxe > div {
   position: relative;
   overflow: hidden;
   perspective: 300px;
 }
 
-.deluxe > div:hover img {
-  opacity: 0.2;
-  margin-bottom: -188px;
-  transform: rotateX(-80deg);
-  transform-origin: top;
-  transition-duration: 1s;
+@media (min-width: 921px) {
+  .deluxe > div:hover img {
+    opacity: 0.2;
+    margin-bottom: -188px;
+    transform: rotateX(-80deg);
+    transform-origin: top;
+    transition-duration: 3s;
+  }
+  .hotel figure a img:hover,
+  .ourNews figure a img:hover {
+    opacity: 0.2;
+  }
 }
 
 .weather {
