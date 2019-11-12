@@ -638,16 +638,16 @@ figure img {
 .deluxe > div {
   position: relative;
   overflow: hidden;
-  perspective: 300px;
+  perspective: 800px;
 }
 
 @media (min-width: 921px) {
   .deluxe > div:hover img {
     opacity: 0.2;
     margin-bottom: -188px;
-    transform: rotateX(-80deg);
-    transform-origin: top;
-    transition-duration: 3s;
+    transform: rotateX(360deg);
+    transform-origin: center;
+    transition: 1.3s;
   }
   .hotel figure a img:hover,
   .ourNews figure a img:hover {
