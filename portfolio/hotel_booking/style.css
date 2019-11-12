@@ -113,17 +113,19 @@ header:after { /*задаем высоту хидеру*/
 }
 
 #menu li a,
-#mobileMenu li a {
+#mobileMenu li > a {
   text-decoration: none;
   color: #0f0f0f;
   transition: .7s;
 }
 
-#menu li a:hover {
-  text-decoration: none;
-  color: #4e26fd;
-  box-shadow: 0 11px 18px #1f1f1f;
-  transform: scale(2);
+@media (min-width: 920px) {
+  #menu li a:hover {
+    text-decoration: none;
+    color: #4e26fd;
+    box-shadow: 0 11px 18px #1f1f1f;
+    transform: scale(2);
+  }
 }
 
 #mobileMenu li {
@@ -291,16 +293,19 @@ header:after { /*задаем высоту хидеру*/
   font-family: 'Bebas Neue Bold', sans-serif;
   font-size: 20px;
   letter-spacing: 1.2px;
-  cursor: pointer;
   width: 183px;
   transition-duration: .7s;
 }
 
-.form input[type="submit"]:hover {
-  background: #61cdee;
-  box-shadow: 0 10px 25px #612592;
-  transform: scale(1.15);
+@media (min-width: 920px) {
+  .form input[type="submit"]:hover {
+    background: #61cdee;
+    box-shadow: 0 10px 25px #612592;
+    transform: scale(1.15);
+    cursor: pointer;
+  }
 }
+
 
 .form input::placeholder {
   padding: 0 20px;
@@ -390,13 +395,6 @@ figure img {
   margin: 0 auto;
 }
 
-.more:hover a {
-  transform: perspective(800px) translateZ(90px);
-  background: #61cdee;
-  border: 2px solid #167998;
-  box-shadow: 0 15px 20px #333333; /*оттеняем кнопку при наведении мыши*/
-}
-
 .more a {
   text-decoration: none;
   color: #4e26fd;
@@ -408,6 +406,15 @@ figure img {
   line-height: 48px;
   padding: 11px 60px;
   transition-duration: .7s;
+}
+
+@media (min-width: 920px) {
+  .more:hover a {
+    transform: perspective(800px) translateZ(90px);
+    background: #61cdee;
+    border: 2px solid #167998;
+    box-shadow: 0 15px 20px #333333; /*оттеняем кнопку при наведении мыши*/
+  }
 }
 
 .winter {
@@ -655,7 +662,7 @@ figure img {
     margin-bottom: -188px;
     transform: rotateX(360deg);
     transform-origin: center;
-    transition: 1.3s;
+    transition: 1.5s;
   }
   .hotel figure a img:hover,
   .ourNews figure a img:hover {
@@ -886,12 +893,14 @@ footer {
   transition-duration: .7s;
 }
 
-.networks a:hover {
-  color: #4e26fd;
-  outline: 2px solid #4e26fd;
-  padding: 8px;
-  box-shadow: 0 7px 30px #ba6afc;
-  transform: scale(1.3); /*изменяем масштаб иконок*/
+@media (min-width: 920px) {
+  .networks a:hover {
+    color: #4e26fd;
+    outline: 2px solid #4e26fd;
+    padding: 8px;
+    box-shadow: 0 7px 30px #ba6afc;
+    transform: scale(1.3); /*изменяем масштаб иконок*/
+  }
 }
 
 .one a,
