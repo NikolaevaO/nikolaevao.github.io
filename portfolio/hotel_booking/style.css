@@ -485,7 +485,7 @@ figure img {
 
 .winter img:hover {
   mix-blend-mode: overlay;
-  margin-bottom: -245px;
+  margin-bottom: -245px; 
   transition: 0.7s;
 }
 
