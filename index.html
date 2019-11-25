@@ -12,18 +12,18 @@
 <body data-spy="scroll" data-target="#menu" data-offset="100">
   <div class="container">
     <header class="row justify-content-center">
-      <nav id="menu" class="navbar">
+      <nav id="menu" class="navbar col-xs-auto">
         <ul class="nav nav-pills">
-          <li class="nav-item">
+          <li class="nav-item col">
             <a id="goTop" class="nav-link smothscroll" href="#about">Наверх</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link smothscroll" href="#resume">Резюме</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link smothscroll" href="#portfolio">Портфолио</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link smothscroll" href="#contacts">Контакты</a>
           </li>
         </ul>
@@ -48,16 +48,46 @@
           </p>
           <div class="skills">
             <p>Ключевые навыки:</p>
-            <div class="row">
-              <p class="col-lg-3">HTML / CSS</p>
-              <p class="col-lg-3">HTML5 / CSS3</p>
-              <p class="col-lg-3">Bootstrap</p>
-              <p class="col-lg-3">Sass</p>
-              <p class="col-lg-3">jQuery</p>
-              <p class="col-lg-3">JavaScript</p>
-              <p class="col-lg-3">Git</p>
-              <p class="col-lg-3">Семантическая верстка</p>
-              <p class="col-lg-3">Адаптивная верстка</p>
+            <div class="row mySkills">
+              <figure class="figure col-4 col-auto logos">
+                <img src="resumeImg/html.png" class="figure-img img-fluid rounded" alt="htmlLogo">
+                <figcaption class="figure-caption text-center">HTML / HTML5</figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <img src="resumeImg/css.png" class="figure-img img-fluid rounded" alt="cssLogo">
+                <figcaption class="figure-caption text-center">CSS / CSS3</figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <img src="resumeImg/bootstrap.png" class="figure-img img-fluid rounded" alt="bootstrapLogo">
+                <figcaption class="figure-caption text-center">Bootstrap</figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <img src="resumeImg/sass.png" class="figure-img img-fluid rounded" alt="sassLogo">
+                <figcaption class="figure-caption text-center">Sass</figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <img src="resumeImg/jq.png" class="figure-img img-fluid rounded" alt="jqueryLogo">
+                <figcaption class="figure-caption text-center">jQuery</figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <img src="resumeImg/js.png" class="figure-img img-fluid rounded" alt="javascriptLogo">
+                <figcaption class="figure-caption text-center">JavaScript</figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <figcaption class="figure-caption text-center">
+                  Адаптивная верстка
+                </figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <figcaption class="figure-caption text-center">
+                  Семантическая верстка
+                </figcaption>
+              </figure>
+              <figure class="figure col-4 col-auto logos">
+                <figcaption class="figure-caption text-center">
+                  Git
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -81,7 +111,7 @@
         </div>
         <!-- portfolio -->
         <div class="col-lg-9 portfolioDescription">
-          <figure class="figure">
+          <figure class="figure myProjects">
             <a href="portfolio/concomitant/index.html">
               <img src="resumeImg/conc.png" class="figure-img img-fluid rounded" alt="concomitant">
               <figcaption class="text-center">Адаптивная страница, построенная на Bootstrap-4,
@@ -90,7 +120,7 @@
             </a>
           </figure>
           <hr>
-          <figure class="figure">
+          <figure class="figure myProjects">
             <a href="portfolio/simple_psd_template/index.html">
               <img src="resumeImg/simple.png" class="figure-img img-fluid rounded" alt="simple_psd_template">
               <figcaption class="text-center">Адаптивная, полностью анимированная страница,
@@ -100,7 +130,7 @@
             </a>
           </figure>
           <hr>
-          <figure class="figure">
+          <figure class="figure myProjects">
             <a href="portfolio/hotel_booking/index.html">
               <img src="resumeImg/hotel.png" class="figure-img img-fluid rounded" alt="hotel_booking">
               <figcaption class="text-center">Адаптивная страница с использованием jQuery, CSS Grid, а так же
