@@ -50,12 +50,6 @@ header {
   color: rgb(236, 223, 206);
 }
 
-#about {
-  background: url(../resumeImg/keyboard.jpg) no-repeat;
-  padding-top: 25%;
-  opacity: .83;
-}
-
 .myPhoto > img {
   border-radius: 5%;
   margin-top: 10px;
@@ -71,6 +65,12 @@ header {
 footer {
   padding: 85px 5%;
   text-align: center;
+}
+
+#about {
+  background: url(../resumeImg/keyboard.jpg) no-repeat;
+  padding-top: 9%;
+  opacity: .85;
 }
 
 #resume {
@@ -127,9 +127,14 @@ figcaption {
   margin: 25px 0 5px;
 }
 
-.logos > .figure-caption {
+.figure-caption {
   color: inherit;
   padding-bottom: 20px;
+}
+
+.logos {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* laptop */

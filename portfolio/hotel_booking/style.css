@@ -283,6 +283,7 @@ header:after { /*задаем высоту хидеру*/
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1.02px;
   color: #000;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -675,7 +676,7 @@ figure img {
   margin-top: 6.6%;
   position: relative;
   width: 100%;
-  animation: winterWeather 15s ease-in-out infinite both;
+  animation: 15s ease-in-out infinite both winterWeather;
 }
 
 @keyframes winterWeather {
