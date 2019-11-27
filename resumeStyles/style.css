@@ -92,13 +92,21 @@ footer {
   margin-left: 40px;
 }
 
-.description em {
+.description a {
   text-transform: lowercase;
+  font-style: italic;
+  color: rgb(187, 211, 219);
+  border-bottom: 1px dotted rgb(187, 211, 219);
+}
+
+.description a:hover {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 hr {
 margin: 1.5em 0;
-border-top: 1px solid #8d9dac;
+border-top: 1px solid #718fad;
 }
 
 .myProjects {
