@@ -440,6 +440,12 @@ figure img {
   overflow: hidden;
 }
 
+.winter div:hover img {
+  mix-blend-mode: overlay;
+  margin-bottom: -245px; 
+  transition: 0.7s;
+}
+
 @media (max-width: 920px) {
   .winter > div {
     background-color: initial;
@@ -482,12 +488,6 @@ figure img {
     width: 220px;
     height: 350px;
   }
-}
-
-.winter img:hover {
-  mix-blend-mode: overlay;
-  margin-bottom: -245px; 
-  transition: 0.7s;
 }
 
 @media (max-width: 920px) {
