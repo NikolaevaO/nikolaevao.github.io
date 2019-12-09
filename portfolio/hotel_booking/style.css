@@ -166,6 +166,7 @@ header:after {
 .perfection-3 {
   width: 100%;
 }
+
 .perfection-1 {
   background: url(image/perfection-1.jpg) top/contain no-repeat;
   grid-row: 1/6;
@@ -306,11 +307,6 @@ header:after {
   }
 }
 
-
-.form input::placeholder {
-  padding: 0 20px;
-}
-
 .hotel,
 .ourNews {
   display: grid;
@@ -371,17 +367,14 @@ figure img {
 }
 
 @media (max-width: 920px) {
+  .hotel {
+    grid-gap: 25px;
+  }
   .hotel p {
     margin-bottom: 0;
   }
   .hotel figcaption {
     margin-top: 15px; 
-  }
-}
-
-@media (max-width: 920px) {
-  .hotel {
-    grid-gap: 25px;
   }
 }
 
@@ -442,7 +435,11 @@ figure img {
 .winter div:hover img {
   mix-blend-mode: overlay;
   margin-bottom: -245px; 
-  transition: 0.7s;
+  transition: .7s;
+}
+
+.no-backgroundblendmode .winter div:hover img {
+  opacity: .2;
 }
 
 @media (max-width: 920px) {
@@ -487,9 +484,6 @@ figure img {
     width: 220px;
     height: 350px;
   }
-}
-
-@media (max-width: 920px) {
   .winter img:hover {
     margin-bottom: 0;
     mix-blend-mode: unset;
@@ -590,25 +584,17 @@ figure img {
   grid-gap: 2.7%;
 }
 
-@media (max-width: 920px) {
-  .deluxe {
-    grid-template-columns: 1fr;
-    grid-gap: 2px;
-    grid-template-rows: auto;
-  }
-}
-@media (max-width: 920px) {
-.deluxe figcaption {
-  padding-top: 4%;
-  }
-}
-
 .room-3 {
   grid-column: 2/2;
   grid-row: 1/3;
 }
 
 @media (max-width: 920px) {
+  .deluxe {
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+    grid-template-rows: auto;
+  }
   .room-3 {
     grid-column: auto;
     grid-row: auto;
@@ -619,11 +605,14 @@ figure img {
 .ourNews figcaption {
   font-weight: 700;
   letter-spacing: 0.64px;
-  margin-bottom: 4px;
-  margin-top: 14px;
+  margin-bottom: 3px;
+  margin-top: 17px;
 }
 
 @media (max-width: 920px) {
+  .deluxe figcaption {
+    padding-top: 4%;
+  }
   .deluxe img {
     float: left;
     width: 50%;
@@ -653,7 +642,6 @@ figure img {
 .deluxe > div {
   position: relative;
   overflow: hidden;
-  perspective: 800px;
 }
 
 @media (min-width: 921px) {
@@ -913,6 +901,7 @@ footer {
 .one a,
 .two a,
 .three a {
+  padding: 0 3px;
   color: #fff;
   text-decoration: none;
   transition-duration: .7s;
