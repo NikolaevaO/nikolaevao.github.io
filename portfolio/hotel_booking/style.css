@@ -675,7 +675,14 @@ figure img {
   margin-top: 6.6%;
   position: relative;
   width: 100%;
+}
+
+.webanimations .weather {
   animation: 15s ease-in-out infinite both winterWeather;
+}
+
+.no-webanimations .weather {
+  background: url(image/weather.jpg) center bottom no-repeat;
 }
 
 @keyframes winterWeather {
