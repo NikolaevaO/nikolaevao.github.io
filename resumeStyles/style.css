@@ -1,11 +1,10 @@
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -40,6 +39,11 @@ header {
 
 #goTop {
   visibility: hidden;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: .3rem .5rem;
 }
 
 .nav-pills .nav-link.active {
@@ -82,24 +86,25 @@ footer {
   color: rgb(48, 44, 44);
 }
 
-.portfolioDescription {
+.portfolioDescription,
+.resumeDescription {
   text-transform: initial;
 }
 
 .resumeDescription p,
-.description p {
+.contactsDescription div {
   text-align: start;
   margin-left: 40px;
 }
 
-.description a {
+.contactsDescription a {
   text-transform: lowercase;
   font-style: italic;
   color: rgb(187, 211, 219);
   border-bottom: 1px dotted rgb(187, 211, 219);
 }
 
-.description a:hover {
+.contactsDescription a:hover {
   text-decoration: none;
   border-bottom: none;
 }
