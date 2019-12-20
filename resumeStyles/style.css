@@ -93,7 +93,7 @@ footer {
 
 .resumeDescription p,
 .contactsDescription div {
-  text-align: start;
+  text-align: left;
   margin-left: 40px;
 }
 
