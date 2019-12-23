@@ -6,7 +6,53 @@ html {
   html {
     font-size: 14px;
   }
+  #menu {
+    display: none;
+  }
 }
+
+@media (min-width: 769px) {
+  #menuButton {
+    display: none;
+  }
+}
+
+#menuButton {
+  font-size: 35px;
+  position: absolute;
+  right: 30px;
+}
+
+#mobileMenu {
+  position: absolute;
+  right: -27px;
+  top: 50px;
+  background-color: black;
+  border-radius: 5%;
+}
+
+#mobileMenu ul {
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+}
+
+#menu li,
+#mobileMenu li {
+  list-style-type: none;
+}
+
+#menu li a,
+#mobileMenu li > a {
+  color: inherit;
+}
+
 
 body {
   position: relative;
@@ -48,10 +94,6 @@ header {
 
 .nav-pills .nav-link.active {
   background-color: #332f2f;
-}
-
-#menu li a {
-  color: rgb(236, 223, 206);
 }
 
 .myPhoto > img {
