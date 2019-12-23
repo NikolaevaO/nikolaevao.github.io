@@ -43,16 +43,10 @@ html {
   right: 25px;
 }
 
-#menu li,
-#mobileMenu li {
-  list-style-type: none;
-}
-
 #menu li a,
 #mobileMenu li > a {
   color: inherit;
 }
-
 
 body {
   position: relative;
