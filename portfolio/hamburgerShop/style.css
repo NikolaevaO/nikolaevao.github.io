@@ -85,9 +85,9 @@ header {
 	margin-bottom: 7px;
 }
 
-	.prodDescription {
-		margin: 3px;
-	}
+.prodDescription {
+	margin: 3px;
+}
 
 .total {
 	background: palevioletred;
@@ -114,43 +114,28 @@ header {
 	text-align: center;
 	cursor: pointer;
 }
-.hmb {
-	position: fixed;
-	left: 13px;
-	top: 120px;
-	width: 120px;
-	padding: 0 8px;
-	background-color: brown;
-	border: rgb(253, 217, 243) 1px dashed;
-	border-radius: 10px;
-	text-align: center;
-}
-.hmb a {
-	color: bisque;
-	text-decoration: none;
-	letter-spacing: .4px;
-}
-.hmb a:hover {
-	text-decoration: underline;
-	color: bisque;
-}
+
 .size > label {
 	margin-right: 50px;
 }
+
 form {
 	width: 600px;
 	font-size: 20px;
 }
+
 .hamburgerMain {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 35px 0 0 180px;
 }
+
 .size,
 .option,
 .price {
 	margin-bottom: 5px;
 }
+
 .size,
 .topping,
 .option,
@@ -159,15 +144,18 @@ form {
 	border: 1px rgb(231, 125, 161) dotted;
 	border-radius: 10px;
 }
+
 .additional,
 .filling,
 .size {
 	padding: 15px 20px;
 }
+
 .calories,
 .price {
 	padding: 0 20px;
 }
+
 #calories,
 #price {
 	font-size: 26px;
