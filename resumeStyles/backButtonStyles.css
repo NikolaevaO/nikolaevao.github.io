@@ -21,18 +21,18 @@
 }
 
 .back a {
-	color: bisque;
-  text-decoration: none;
-}
-
-.back a:hover {
-	text-decoration: underline;
-  color: bisque;
-  cursor: pointer;
-}
-
-.back h4 {
   font-size: 18px;
   font-weight: bold;
   line-height: 2;
+  color: bisque;
+  text-decoration: none;
+  border-bottom: 1px dotted bisque;
 }
+
+.back a:hover {
+  border-bottom: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
