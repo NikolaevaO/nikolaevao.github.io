@@ -45,7 +45,7 @@ html {
   box-shadow: none;
 }
 
-#menu,
+#menu a,
 .dropdown-item {
   color: rgb(236, 223, 206);
 }
