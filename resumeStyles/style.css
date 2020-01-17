@@ -18,34 +18,36 @@ html {
 }
 
 #menuButton {
-  font-size: 35px;
+  font-size: 32px;
   position: absolute;
-  right: 30px;
+  right: 26px;
+  color: rgb(236, 223, 206);
+  background-color: black;
 }
 
 #mobileMenu {
-  position: absolute;
-  right: -27px;
-  top: 50px;
+  text-align: center;
   background-color: black;
   border-radius: 5%;
 }
 
-#mobileMenu ul {
-  margin-bottom: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .mobile {
   position: absolute;
-  top: 13px;
+  top: 8px;
   right: 25px;
 }
 
-#menu li a,
-#mobileMenu li > a {
-  color: inherit;
+.dropdown-toggle::after {
+  content: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+#menu,
+.dropdown-item {
+  color: rgb(236, 223, 206);
 }
 
 body {

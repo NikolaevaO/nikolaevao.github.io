@@ -29,18 +29,16 @@
           </li>
         </ul>
       </nav>
-      <!-- mobileMenu -->
-      <nav class="mobile">
-        <div id="menuButton" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mobileMenu" href="#mobileMenu">
+      <!-- mobile -->
+      <nav class="mobile dropdown">
+        <a id="menuButton" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-bars"></i>
-        </div>
-        <div id="mobileMenu" class="collapse">
-          <ul class="nav nav-pills">
-            <li class="nav-item col"><a class="nav-link" href="#about">Наверх</a></li>
-            <li class="nav-item col"><a class="nav-link" href="#resume">Резюме</a></li>
-            <li class="nav-item col"><a class="nav-link" href="#portfolio">Портфолио</a></li>
-            <li class="nav-item col"><a class="nav-link" href="#contacts">Контакты</a></li>
-          </ul>
+        </a>
+        <div id="mobileMenu" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#about">Наверх</a>
+          <a class="dropdown-item" href="#resume">Резюме</a>
+          <a class="dropdown-item" href="#portfolio">Портфолио</a>
+          <a class="dropdown-item" href="#contacts">Контакты</a>
         </div>
       </nav>
     </header>
@@ -200,6 +198,7 @@
     </footer>
   </div>
   <script src="lib/jquery-3.3.1.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="script.js" ></script>
 </body>
