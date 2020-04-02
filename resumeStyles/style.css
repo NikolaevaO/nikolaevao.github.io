@@ -115,6 +115,10 @@ footer {
   opacity: .85;
 }
 
+.figure-caption {
+  color: inherit;
+}
+
 #resume {
   background: #2c3e50;
 }
@@ -166,6 +170,7 @@ a.myProjects {
 
 .mySkills {
   margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 .skills p {
@@ -176,6 +181,7 @@ a.myProjects {
 .logos {
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 25px;
 }
 
 /* laptop */
@@ -341,8 +347,6 @@ a.myProjects {
 
 .front,
 .back {
-  background-size: cover;
-	background-position: center;
 	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
